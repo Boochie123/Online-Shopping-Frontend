@@ -55,7 +55,7 @@ let CheckOut:React.FC=()=>
     
         try {
             const response = await axios.post<{ id: string }>(
-                "https://online-shopping-frontend-g3w6.onrender.com/api/payments/create-checkout-session",
+                "https://online-shopping-backend-wucr.onrender.com/api/payments/create-checkout-session",
                 body,
                 { headers }
             );
