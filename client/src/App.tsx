@@ -45,7 +45,7 @@ let App:React.FC=()=> {
           <Route path="users/login" element={<UserLogin />} />
           <Route path="users/register" element={<UserRegister />} />
           <Route path="cancel" element={<Failure />} />
-          <Route path="success" element={<Success />} />
+          <Route path="/success" element={<Success />} />
           {/* Protected Routes using PrivateRoute */}
           <Route element={<PrivateRoute />}>
             <Route path="products/upload" element={<UploadProduct />} />
